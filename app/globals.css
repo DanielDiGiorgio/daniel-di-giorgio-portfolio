@@ -1,0 +1,124 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes ping-slow {
+  75%, 100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+:root {
+  --background: #0B0F19;
+  --surface: #111827;
+  --surface-alt: #1F2937;
+  --accent: #3B82F6;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--background);
+  color: #e5e7eb;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Chapter background effects */
+.chapter-bg-grid {
+  background-color: #0B0F19;
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.chapter-bg-green {
+  background: linear-gradient(180deg, #0B0F19 0%, rgba(34, 197, 94, 0.03) 50%, #0B0F19 100%);
+}
+
+.chapter-bg-integration {
+  background: linear-gradient(180deg, #0B0F19 0%, rgba(59, 130, 246, 0.04) 50%, #0B0F19 100%);
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.chapter-bg-workflow {
+  background: radial-gradient(ellipse 80% 50% at 50% 50%, rgba(59, 130, 246, 0.06), transparent);
+}
+
+.chapter-bg-api {
+  background: linear-gradient(180deg, #0B0F19 0%, rgba(59, 130, 246, 0.05) 30%, rgba(59, 130, 246, 0.02) 70%, #0B0F19 100%);
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Glow utilities */
+.glow-accent {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+}
+
+.glow-subtle {
+  box-shadow: 0 0 60px rgba(59, 130, 246, 0.15);
+}
+
+/* Canvas / Three.js container */
+.canvas-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.animate-ping-slow {
+  animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Editable text layout */
+.prose-cinematic {
+  max-width: 600px;
+  word-break: break-word;
+  line-height: 1.7;
+}
+
+/* Typewriter caret */
+@keyframes caretBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter-caret {
+  margin-left: 2px;
+  animation: caretBlink 1s infinite;
+}

@@ -1,0 +1,16 @@
+next
+react
+react-dom
+typescript
+tailwindcss
+postcss
+autoprefixer
+framer-motion
+gsap
+three
+@react-three/fiber
+@react-three/drei
+lenis
+next-intl
+lucide-react
+clsx
