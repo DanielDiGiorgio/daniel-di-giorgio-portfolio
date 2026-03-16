@@ -1,1 +1,0 @@
-"use strict";exports.id=171,exports.ids=[171],exports.modules={2171:(a,b,c)=>{c.r(b),c.d(b,{default:()=>d});let d={items:["Atualmente atuando como Product Owner na PagBrasil","Mergulhando no mundo das AIs e criando side projects com elas","Sempre buscando desafios e coisas que me tirem da minha zona de conforto"]}}};

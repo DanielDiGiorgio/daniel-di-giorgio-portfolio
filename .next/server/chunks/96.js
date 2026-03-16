@@ -1,1 +1,0 @@
-"use strict";exports.id=96,exports.ids=[96],exports.modules={4096:(a,b,c)=>{c.r(b),c.d(b,{default:()=>d});let d={items:["Currently working as a Product Owner at PagBrasil","Diving into the world of AI and building side projects with it","Always looking for challenges and things that push me out of my comfort zone"]}}};
